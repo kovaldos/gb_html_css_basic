@@ -592,7 +592,6 @@ ol[class] {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-top: 100px;
 }
 
 .rouble {
@@ -706,6 +705,10 @@ ol[class] {
 
 /* Hero section */
 
+.hero {
+  padding: 44px 0 162px;
+}
+
 .hero__col--1 {
   max-width: 550px;
   margin-right: 40px;
@@ -721,4 +724,10 @@ ol[class] {
 
 .hero__text {
   color: #888888;
+}
+
+/* Partners section */
+
+.partners {
+  padding: 97px 0;
 }
