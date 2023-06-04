@@ -736,12 +736,9 @@ ol[class] {
 
 /* Hero section */
 
-.hero {
-  padding: 44px 0 162px;
-}
-
 .hero__cols {
   display: flex;
+  padding: 44px 0 162px;
 }
 
 .hero__col--1 {
