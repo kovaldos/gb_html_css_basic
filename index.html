@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="visually-hidden">
+      <svg>
+        <symbol viewBox="0 0 28 25" id="icon-features-top-item-1">
+          <path
+            d="M2.78 2.78v19.44H25V2.78H2.78ZM1.38 0h25a1.39 1.39 0 0 1 1.4 1.39V23.6a1.39 1.39 0 0 1-1.4 1.39h-25A1.39 1.39 0 0 1 0 23.61V1.4A1.39 1.39 0 0 1 1.39 0Zm16.39 9.43-2.5-2.49h6.95v6.95l-2.49-2.5-5.36 5.38-2.95-2.95-3.93 3.93-1.96-1.97 5.89-5.89 2.95 2.95 3.4-3.4Z"
+          />
+        </symbol>
+
+        <symbol viewBox="0 0 25 25" id="icon-features-top-item-2">
+          <path
+            d="M11.57 23.96a1.04 1.04 0 0 1-1.03-1.16l.8-7.38H5.21a1.04 1.04 0 0 1-.87-1.63L12.56 1.5a1.04 1.04 0 0 1 1.73.01c.12.2.18.41.17.64l-.8 7.43h6.13a1.04 1.04 0 0 1 .87 1.63L12.44 23.5a1.04 1.04 0 0 1-.87.46ZM7.16 13.33h5.34a1.04 1.04 0 0 1 1.03 1.16l-.47 4.32 4.78-7.14H12.5a1.04 1.04 0 0 1-1.04-1.16l.47-4.32-4.77 7.14Z"
+          />
+        </symbol>
+
+        <symbol viewBox="0 0 25 25" id="icon-features-top-item-3">
+          <path
+            d="M13.4 22.92c-.5 0-.98-.2-1.34-.56L5.4 15.68c-.18-.17-.28-.4-.3-.64L4.16 5.3A1.04 1.04 0 0 1 5.3 4.17l9.74.91c.24.03.47.13.64.3l6.68 6.68a1.9 1.9 0 0 1 0 2.68l-7.62 7.62a1.9 1.9 0 0 1-1.33.56Zm-6.24-8.45 6.25 6.25 7.34-7.34-6.25-6.26-8.14-.76.8 8.1Z"
+          />
+          <path
+            d="M10.94 12.5a1.56 1.56 0 1 0 0-3.13 1.56 1.56 0 0 0 0 3.13Z"
+          />
+        </symbol>
+        <symbol viewBox="0 0 6 10" id="icon-chevron-right">
+          <path
+            d="M.47.47c.3-.3.77-.3 1.06 0l4 4c.3.3.3.77 0 1.06l-4 4A.75.75 0 0 1 .47 8.47L3.94 5 .47 1.53a.75.75 0 0 1 0-1.06Z"
+          />
+        </symbol>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <span class="logo">
+            <picture class="logo__pic">
+              <source
+                media="(min-width: 1024px)"
+                srcset="/images/Logo.png 1x, /images/Logo@2x.png 2x"
+              />
+              <source srcset="/images/logo800w@2x.png 2x" />
+              <img src="/images/logo800w.png" alt="Main logo" />
+            </picture>
+          </span>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--is-active" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about-us">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="features">Features</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="team">Team</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__cols">
+              <div class="hero__col hero__col--1">
+                <div class="hero__heading">
+                  <h1 class="hero__title title title--h1">
+                    SEO &amp;&nbsp;Digital Marketing For Your Website.
+                  </h1>
+                  <p class="hero__text text text--xl">
+                    Provide all kind of&nbsp;seo services and help
+                    to&nbsp;improve seo&nbsp;ranking. Globally incubate
+                    standards.
+                  </p>
+                </div>
+                <div class="hero__actions">
+                  <button type="button" class="hero__btn btn btn--primary">
+                    Start Now
+                  </button>
+                  <a href="#" class="hero__link hero-link">
+                    <span class="hero-link__icon"></span>
+                    <span class="hero-link__text">Watch Video</span>
+                  </a>
+                </div>
+              </div>
+              <div class="hero__col hero__col--2">
+                <picture class="hero__picture">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /images/hero-img.webp    1x,
+                      /images/hero-img@2x.webp 2x
+                    "
+                  />
+                  <source srcset="/images/hero-img@2x.png 2x" />
+                  <img src="/images/hero-img.png" alt="Hero picture" />
+                </picture>
+              </div>
+            </div>
+            <div class="partners">
+              <ul class="partners__list">
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-1.webp    1x,
+                        /images/partner-logo-1@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-1@2x.png 2x" />
+                    <img src="/images/partner-logo-1.png" alt="Partner logo" />
+                  </picture>
+                </li>
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-2.webp    1x,
+                        /images/partner-logo-2@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-2@2x.png 2x" />
+                    <img src="/images/partner-logo-2.png" alt="Partner logo" />
+                  </picture>
+                </li>
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-3.webp    1x,
+                        /images/partner-logo-3@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-3@2x.png 2x" />
+                    <img src="/images/partner-logo-3.png" alt="Partner logo" />
+                  </picture>
+                </li>
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-4.webp    1x,
+                        /images/partner-logo-4@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-4@2x.png 2x" />
+                    <img src="/images/partner-logo-4.png" alt="Partner logo" />
+                  </picture>
+                </li>
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-5.webp    1x,
+                        /images/partner-logo-5@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-5@2x.png 2x" />
+                    <img src="/images/partner-logo-5.png" alt="Partner logo" />
+                  </picture>
+                </li>
+                <li class="partners__item partner">
+                  <picture class="partner__logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-2.webp    1x,
+                        /images/partner-logo-2@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-2@2x.png 2x" />
+                    <img src="/images/partner-logo-2.png" alt="Partner logo" />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="features__top features-top">
+            <div class="container">
+              <ul class="features-top__list">
+                <li class="features-top__item features-top-item">
+                  <a href="#" class="features-top__link">
+                    <span class="features-top__icon features-top__icon--1">
+                      <svg class="icon" width="28" height="25">
+                        <use xlink:href="#icon-features-top-item-1"></use>
+                      </svg>
+                    </span>
+                    <h3 class="features-top-item__title title title--h3">
+                      Grow Your Business
+                    </h3>
+                    <p class="features-top-item__text text text--s">
+                      Leverage agile frameworks to&nbsp;provide a&nbsp;robust
+                      synopsis for high level overviews.
+                    </p>
+                    <span class="features-top-item__more">Read More...</span>
+                  </a>
+                </li>
+                <li class="features-top__item features-top-item">
+                  <a href="#" class="features-top__link">
+                    <span class="features-top__icon features-top__icon--2">
+                      <svg class="icon" width="25" height="25">
+                        <use xlink:href="#icon-features-top-item-2"></use>
+                      </svg>
+                    </span>
+                    <h3 class="features-top-item__title title title--h3">
+                      Get Quality Ieads
+                    </h3>
+                    <p class="features-top-item__text text text--s">
+                      Leverage agile frameworks to&nbsp;provide a&nbsp;robust
+                      synopsis for high level overviews.
+                    </p>
+                    <span class="features-top-item__more">Read More...</span>
+                  </a>
+                </li>
+                <li class="features-top__item features-top-item">
+                  <a href="#" class="features-top__link">
+                    <span class="features-top__icon features-top__icon--3">
+                      <svg class="icon" width="25" height="25">
+                        <use xlink:href="#icon-features-top-item-3"></use>
+                      </svg>
+                    </span>
+                    <h3 class="features-top-item__title title title--h3">
+                      Drive More Sales
+                    </h3>
+                    <p class="features-top-item__text text text--s">
+                      Leverage agile frameworks to&nbsp;provide a&nbsp;robust
+                      synopsis for high level overviews.
+                    </p>
+                    <span class="features-top-item__more">Read More...</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__main features-main">
+            <div class="container">
+              <h2 class="features-main__title title title--h2">
+                Why You Should Choose&nbsp;Us.
+              </h2>
+              <p class="features-main__subtitle text text--m">
+                Distinctively exploit optimal alignments for intuitive
+                bandwidth. Quickly coordinate e-business applications through
+                revolutionary catalysts.
+              </p>
+              <ul class="features-main__list">
+                <li class="features-main__item features-main-item">
+                  <a href="#" class="features-main__link">
+                    <picture class="features-main-item__pic">
+                      <source
+                        srcset="
+                          /images/features-main-img-1.webp    1x,
+                          /images/features-main-img-1@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source srcset="/images/features-main-img-1@2x.png 2x" />
+                      <img
+                        src="/images/features-main-img-1.png"
+                        alt="features-main-img-1"
+                      />
+                    </picture>
+                    <h3 class="features-main-item__title title title--h3">
+                      Keyword Research
+                    </h3>
+                    <p class="features-main-item__text text text--s">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                    <span
+                      class="features-main-item__btn features-main-item-btn btn btn--primary"
+                    >
+                      Learn More
+                      <small class="features-main-item-btn__icon">
+                        <svg class="icon" width="6" height="10">
+                          <use xlink:href="#icon-chevron-right"></use>
+                        </svg>
+                      </small>
+                    </span>
+                  </a>
+                </li>
+                <li class="features-main__item features-main-item">
+                  <a href="#" class="features-main__link">
+                    <picture class="features-main-item__pic">
+                      <source
+                        srcset="
+                          /images/features-main-img-2.webp    1x,
+                          /images/features-main-img-2@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source srcset="/images/features-main-img-2@2x.png 2x" />
+                      <img
+                        src="/images/features-main-img-2.png"
+                        alt="features-main-img-2"
+                      />
+                    </picture>
+                    <h3 class="features-main-item__title title title--h3">
+                      Seo Optimazadion
+                    </h3>
+                    <p class="features-main-item__text text text--s">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                    <span
+                      class="features-main-item__btn features-main-item-btn btn btn--primary"
+                    >
+                      Learn More
+                      <small class="features-main-item-btn__icon">
+                        <svg class="icon" width="6" height="10">
+                          <use xlink:href="#icon-chevron-right"></use>
+                        </svg>
+                      </small>
+                    </span>
+                  </a>
+                </li>
+                <li class="features-main__item features-main-item">
+                  <a href="#" class="features-main__link">
+                    <picture class="features-main-item__pic">
+                      <source
+                        srcset="
+                          /images/features-main-img-3.webp    1x,
+                          /images/features-main-img-3@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source srcset="/images/features-main-img-3@2x.png 2x" />
+                      <img
+                        src="/images/features-main-img-3.png"
+                        alt="features-main-img-3"
+                      />
+                    </picture>
+                    <h3 class="features-main-item__title title title--h3">
+                      Social Marketing
+                    </h3>
+                    <p class="features-main-item__text text text--s">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                    <span
+                      class="features-main-item__btn features-main-item-btn btn btn--primary"
+                    >
+                      Learn More
+                      <small class="features-main-item-btn__icon">
+                        <svg class="icon" width="6" height="10">
+                          <use xlink:href="#icon-chevron-right"></use>
+                        </svg>
+                      </small>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
