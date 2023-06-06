@@ -8,20 +8,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="visually-hidden">
+      <svg>
+        <symbol viewBox="0 0 27 28" id="icon-search">
+          <path
+            d="M19.06 17.63a10.4 10.4 0 1 0-1.4 1.28l7.75 7.8a.93.93 0 0 0 1.02.22.97.97 0 0 0 .3-1.56l-7.67-7.74ZM2.89 10.5a8.54 8.54 0 1 1 17.07.13 8.54 8.54 0 0 1-17.07-.13Z"
+          />
+        </symbol>
+      </svg>
+    </div>
+
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <span class="logo">
-            <picture class="logo__pic">
-              <source
-                media="(min-width: 1024px)"
-                srcset="/images/Logo.png 1x, /images/Logo@2x.png 2x"
-              />
-              <source srcset="/images/logo800w@2x.png 2x">
-              <img src="/images/logo800w.png" alt="Main logo" />
-            </picture>
-          </span>
-          <nav class="menu">                                    
+          <div class="header__cols">
+            <div class="header__col header__col--1">
+              <span class="header__logo header-logo">
+                <picture class="header-logo__pic">
+                  <source
+                    type="image/webp"
+                    srcset="/images/Logo.webp 1x, /images/Logo@2x.webp 2x"
+                  />
+                  <source srcset="/images/logo800w@2x.png 2x" />
+                  <img src="/images/logo.png" alt="Main logo" />
+                </picture>
+              </span>
+              <!-- ToDo Форма с инпутом поиска -->
+              <div class="header__search header-search">
+                <button class="header-search__btn btn btn--empty">
+                  <svg class="icon" width="27" height="27">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="header__col header__col--2">
+              
+            </div>
+          </div>
+          <nav class="menu" hidden>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link menu__link--is-active" href="#">Home</a>
@@ -51,70 +76,33 @@
       <main class="main">
         <section class="hero">
           <div class="container">
-            <div class="hero__cols">
-              <div class="hero__col hero__col--1">
-                <div class="hero__heading">
-                  <h1 class="hero__title title title--h1">SEO &amp;&nbsp;Digital Marketing For Your Website.</h1>
-                  <p class="hero__text text text--xl">Provide all kind of&nbsp;seo services and help to&nbsp;improve seo&nbsp;ranking. Globally incubate standards.</p>
-                </div>
-                <div class="hero__actions">
-                  <button type="button" class="hero__btn btn btn--primary">Start Now</button>
-                  <a href="#" class="hero__link hero-link">
-                    <span class="hero-link__icon"></span>
-                    <span class="hero-link__text">Watch Video</span>
-                  </a>
-                </div>
-              </div>
-              <div class="hero__col hero__col--2">
-                <picture class="hero__picture">
-                  <source type="image/webp" srcset="/images/hero-img.webp 1x, /images/hero-img@2x.webp 2x">
-                  <source srcset="/images/hero-img@2x.png 2x">
-                  <img src="/images/hero-img.png" alt="Hero picture">
-                </picture>
-              </div>
+            <div class="hero__bg hero-bg">
+              <picture class="hero-bg__pic">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/hero-bg-img.webp    1x,
+                    /images/hero-bg-img@2x.webp 2x
+                  "
+                />
+                <source srcset="/images/hero-bg-img@2x.png 2x" />
+                <img src="/images/hero-bg-img.png" alt="Partner logo" />
+              </picture>
             </div>
+            <div class="hero__content"></div>
             <div class="partners">
               <ul class="partners__list">
                 <li class="partners__item partner">
                   <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-1.webp 1x, /images/partner-logo-1@2x.webp 2x">
-                    <source srcset="/images/partner-logo-1@2x.png 2x">
-                    <img src="/images/partner-logo-1.png" alt="Partner logo">
-                  </picture>
-                </li>
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-2.webp 1x, /images/partner-logo-2@2x.webp 2x">
-                    <source srcset="/images/partner-logo-2@2x.png 2x">
-                    <img src="/images/partner-logo-2.png" alt="Partner logo">
-                  </picture>
-                </li>
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-3.webp 1x, /images/partner-logo-3@2x.webp 2x">
-                    <source srcset="/images/partner-logo-3@2x.png 2x">
-                    <img src="/images/partner-logo-3.png" alt="Partner logo">
-                  </picture>
-                </li>
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-4.webp 1x, /images/partner-logo-4@2x.webp 2x">
-                    <source srcset="/images/partner-logo-4@2x.png 2x">
-                    <img src="/images/partner-logo-4.png" alt="Partner logo">
-                  </picture>
-                </li>
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-5.webp 1x, /images/partner-logo-5@2x.webp 2x">
-                    <source srcset="/images/partner-logo-5@2x.png 2x">
-                    <img src="/images/partner-logo-5.png" alt="Partner logo">
-                  </picture>
-                </li>
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source type="image/webp" srcset="/images/partner-logo-2.webp 1x, /images/partner-logo-2@2x.webp 2x">
-                    <source srcset="/images/partner-logo-2@2x.png 2x">
-                    <img src="/images/partner-logo-2.png" alt="Partner logo">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /images/partner-logo-1.webp    1x,
+                        /images/partner-logo-1@2x.webp 2x
+                      "
+                    />
+                    <source srcset="/images/partner-logo-1@2x.png 2x" />
+                    <img src="/images/partner-logo-1.png" alt="Partner logo" />
                   </picture>
                 </li>
               </ul>
