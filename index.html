@@ -15,6 +15,21 @@
             d="M19.06 17.63a10.4 10.4 0 1 0-1.4 1.28l7.75 7.8a.93.93 0 0 0 1.02.22.97.97 0 0 0 .3-1.56l-7.67-7.74ZM2.89 10.5a8.54 8.54 0 1 1 17.07.13 8.54 8.54 0 0 1-17.07-.13Z"
           />
         </symbol>
+        <symbol viewBox="0 0 32 23" id="icon-menu">
+          <path
+            d="M0 23v-2.69h32V23H0Zm0-10.24v-2.69h32v2.69H0ZM0 2.69V0h32v2.69H0Z"
+          />
+        </symbol>
+        <symbol viewBox="0 0 29 29" id="icon-user">
+          <path
+            d="M14.5 19.94c4.5 0 8.16-4.48 8.16-9.97C22.66 4.47 19 0 14.5 0a7.45 7.45 0 0 0-5.83 3C7.13 5 6.3 7.45 6.34 9.97c0 5.5 3.66 9.97 8.16 9.97Zm0-18.13c3.5 0 6.34 3.66 6.34 8.16S18 18.12 14.5 18.12s-6.34-3.66-6.34-8.15c0-4.5 2.84-8.16 6.34-8.16Zm6.34 16.32a.9.9 0 0 0 0 1.8 6.35 6.35 0 0 1 6.35 6.35.9.9 0 0 1-.9.9H2.71a.9.9 0 0 1-.9-.9 6.35 6.35 0 0 1 6.34-6.34.9.9 0 0 0 0-1.81A8.16 8.16 0 0 0 0 26.28 2.72 2.72 0 0 0 2.72 29h23.56A2.72 2.72 0 0 0 29 26.28a8.17 8.17 0 0 0-8.16-8.16Z"
+          />
+        </symbol>
+        <symbol viewBox="0 0 32 29" id="icon-cart">
+          <path
+            d="M26.2 29a2.48 2.48 0 1 1 .2 0h-.2ZM6.75 26.32a2.68 2.68 0 1 1 5.37 0 2.68 2.68 0 0 1-5.37 0Zm3.8-5.63a1.18 1.18 0 0 1-1.14-.87L4.57 2.36H1.18a1.18 1.18 0 0 1 0-2.36h4.28a1.18 1.18 0 0 1 1.15.87l4.83 17.45h13.18L29 8.28H14.4a1.18 1.18 0 1 1 0-2.37h16.41A1.18 1.18 0 0 1 32 6.99c.02.2-.01.4-.09.58l-5.4 12.4a1.18 1.18 0 0 1-1.09.72H10.55Z"
+          />
+        </symbol>
       </svg>
     </div>
 
@@ -24,18 +39,11 @@
           <div class="header__cols">
             <div class="header__col header__col--1">
               <span class="header__logo header-logo">
-                <picture class="header-logo__pic">
-                  <source
-                    type="image/webp"
-                    srcset="/images/Logo.webp 1x, /images/Logo@2x.webp 2x"
-                  />
-                  <source srcset="/images/logo800w@2x.png 2x" />
-                  <img src="/images/logo.png" alt="Main logo" />
-                </picture>
+                <img src="/images/logo.png" alt="Main logo" />
               </span>
-              <!-- ToDo Форма с инпутом поиска -->
+              <!-- ToDo Форма поиска -->
               <div class="header__search header-search">
-                <button class="header-search__btn btn btn--empty">
+                <button class="header-search__btn btn btn--reset">
                   <svg class="icon" width="27" height="27">
                     <use xlink:href="#icon-search"></use>
                   </svg>
@@ -43,9 +51,42 @@
               </div>
             </div>
             <div class="header__col header__col--2">
-              
+              <button
+                class="header__btn header__btn--menu btn btn--reset"
+                type="button"
+                aria-label="Переключатель отображения меню"
+                aria-pressed="false"
+                data-burger-btn
+              >
+                <svg class="icon" width="32" height="23">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
+              </button>
+              <button
+                class="header__btn header__btn--user btn btn--reset"
+                type="button"
+                aria-label="Кнопка профиля пользователя"
+                aria-pressed="false"
+                data-burger-btn
+              >
+                <svg class="icon" width="29" height="29">
+                  <use xlink:href="#icon-user"></use>
+                </svg>
+              </button>
+              <button
+                class="header__btn header__btn--cart btn btn--reset"
+                type="button"
+                aria-label="Кнопка перехожа в корзину"
+                aria-pressed="false"
+                data-burger-btn
+              >
+                <svg class="icon" width="32" height="29">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
             </div>
           </div>
+          <!-- ToDo Бургер-меню -->
           <nav class="menu" hidden>
             <ul class="menu__list">
               <li class="menu__item">
@@ -75,37 +116,155 @@
       </header>
       <main class="main">
         <section class="hero">
-          <div class="container">
-            <div class="hero__bg hero-bg">
-              <picture class="hero-bg__pic">
-                <source
-                  type="image/webp"
-                  srcset="
-                    /images/hero-bg-img.webp    1x,
-                    /images/hero-bg-img@2x.webp 2x
-                  "
-                />
-                <source srcset="/images/hero-bg-img@2x.png 2x" />
-                <img src="/images/hero-bg-img.png" alt="Partner logo" />
-              </picture>
+          <div class="hero__container container">
+            <picture class="hero__bg hero-bg bg-img">
+              <source
+                type="image/webp"
+                srcset="
+                  /images/hero-bg-img.webp    1x,
+                  /images/hero-bg-img@2x.webp 2x
+                "
+              />
+              <source srcset="/images/hero-bg-img@2x.png 2x" />
+              <img
+                class="hero-bg__img"
+                src="/images/hero-bg-img.png"
+                alt="Partner logo"
+              />
+            </picture>
+            <div class="hero__content">
+              <div class="hero__heading">
+                <h1 class="hero__title title title--h1">
+                  <span class="hero__title hero__title--top">The Brand</span>
+                  <span class="hero__title hero__title--bottom">of luxerious<span>
+                  <span class="hero__title hero__title--colored">fashion</span>
+                </h1>
+              </div>
             </div>
-            <div class="hero__content"></div>
-            <div class="partners">
-              <ul class="partners__list">
-                <li class="partners__item partner">
-                  <picture class="partner__logo">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        /images/partner-logo-1.webp    1x,
-                        /images/partner-logo-1@2x.webp 2x
-                      "
-                    />
-                    <source srcset="/images/partner-logo-1@2x.png 2x" />
-                    <img src="/images/partner-logo-1.png" alt="Partner logo" />
-                  </picture>
-                </li>
-              </ul>
+          </div>
+        </section>
+        <div class="categories">
+          <div class="container">
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <img src="/images/categories-img-1.jpg" alt="Model women" class="categories__bg bg-img">
+                  <div class="categories__heading">
+                    <h2 class="categories__title title title--h3">
+                      <small>30% Off</small>
+                      <span>for women</span>
+                    </h2>
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <img src="/images/categories-img-2.jpg" alt="Model men" class="categories__bg bg-img">
+                  <div class="categories__heading">
+                    <h2 class="categories__title title title--h3">
+                      <small>Hot deal</small>
+                      <span>for men</span>
+                    </h2>
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <img src="/images/categories-img-3.jpg" alt="Model kid" class="categories__bg bg-img">
+                  <div class="categories__heading">
+                    <h2 class="categories__title title title--h3">
+                      <small>New arrivals</small>
+                      <span>for kids</span>
+                    </h2>
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <img src="/images/categories-img-4.jpg" alt="Accesories" class="categories__bg bg-img">
+                  <div class="categories__heading">
+                    <h2 class="categories__title title title--h3">
+                      <small>Luxerious & trendy</small>
+                      <span>Accesories</span>
+                    </h2>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="featured">
+          <div class="container">
+            <div class="featured__heading">
+              <h2 class="featured__title title title--h2">Featured Items</h2>
+              <p class="featured__subtitle text text--s">
+                Shop for items based on&nbsp;what we&nbsp;featured in&nbsp;this week
+              </p>
+            </div>
+            <ul class="featured__list">
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-1.jpg" alt="featured-img-1" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-2.jpg" alt="featured-img-2" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-3.jpg" alt="featured-img-3" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-4.jpg" alt="featured-img-4" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-5.jpg" alt="featured-img-5" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+              <li class="featured__item">
+                <a href="#" class="featured__card card card--home-page">
+                  <img src="/images/featured-img-6.jpg" alt="featured-img-6" class="card__img">
+                  <div class="card__desc">
+                    <h3 class="card__title title title--h4">Ellery x m'o capsule</h3>
+                    <p class="card__text text text--s">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                    <span class="card__price">$52.00</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="featured__more">
+              <a href="/catalog-page" class="featured__btn btn btn--empty">Browse All Product</a>
             </div>
           </div>
         </section>
