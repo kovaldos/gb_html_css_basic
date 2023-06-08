@@ -10,7 +10,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -812,6 +812,12 @@ ol[class] {
 
 .hero__bg {
   transform: translateX(-190px);
+  z-index: 1;
+}
+
+.hero-bg__img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__content {
@@ -920,7 +926,7 @@ ol[class] {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .card__desc {
@@ -947,4 +953,53 @@ ol[class] {
 .featured__more {
   display: flex;
   justify-content: center;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 0 16px;
+  }
+
+  .title--h1 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .hero {
+    background-color: #f1e4e6;
+  }
+
+  .hero__bg {
+    transform: translateX(-16px);
+  }
+
+  .hero__container {
+    min-height: 368px;
+  }
+
+  .hero__content {
+    padding-top: 138px;
+    flex: 0 1 327px;
+  }
+
+  .hero__title--bottom,
+  .hero__title--colored {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .categories {
+    padding: 65px 0 50px;
+  }
+
+  .categories__list {
+    grid-gap: 20px;
+  }
+
+  .featured__list {
+    grid-gap: 16px;
+  }
 }
