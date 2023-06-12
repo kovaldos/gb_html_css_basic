@@ -10,7 +10,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -961,7 +961,7 @@ ol[class] {
 @media (max-width: 1024px) {
   .container {
     max-width: 900px;
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .title--h1 {
@@ -1002,5 +1002,70 @@ ol[class] {
 
   .featured__list {
     grid-gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 700px;
+    padding: 0 16px;
+  }
+
+  .hero__container {
+    min-height: 363px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero__content {
+    flex: auto;
+    padding: 40px;
+  }
+
+  .title--h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .header__btn:not(:first-of-type) {
+    display: none;
+  }
+
+  .header__btn:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .hero__bg {
+    display: none;
+  }
+
+  .hero__title--bottom,
+  .hero__title--colored {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .categories__list {
+    grid-template-columns: auto;
+    grid-gap: 32px;
+  }
+
+  .categories__item:last-child {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  .categories__heading {
+    padding: 29% 0;
+}
+
+  .categories__item:last-child .categories__heading {
+    padding: 9.2% 0;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero__content {
+    padding: 0;
   }
 }
