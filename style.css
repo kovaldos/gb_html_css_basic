@@ -773,14 +773,35 @@ ol[class] {
   align-items: center;
 }
 
+.header__btn-list {
+  display: flex;
+}
+
+.header__btn-list-item:not(:last-of-type) {
+  margin-right: 23px;
+}
+
+.cart-btn-wrap {
+  position: relative;
+}
+
 .header__btn {
   padding: 5px;
   width: 44px;
   height: 33px;
 }
 
-.header__btn:not(:last-of-type) {
-  margin-right: 23px;
+.cart-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__list {
@@ -874,6 +895,16 @@ ol[class] {
   align-items: center;
   justify-content: center;
   background: rgba(33, 22, 22, 0.7);
+  overflow: hidden;
+}
+
+.categories__bg {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.categories__link:hover .categories__bg {
+  transform: scale(1.1);
 }
 
 .categories__heading {

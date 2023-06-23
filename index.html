@@ -72,39 +72,48 @@
               </div>
             </div>
             <div class="header__col header__col--2">
-              <button
-                class="header__btn header__btn--menu btn btn--reset"
-                type="button"
-                aria-label="Переключатель отображения меню"
-                aria-pressed="false"
-                data-burger-btn
-              >
-                <svg class="icon" width="32" height="23">
-                  <use xlink:href="#icon-menu"></use>
-                </svg>
-              </button>
-              <button
-                class="header__btn header__btn--user btn btn--reset"
-                type="button"
-                aria-label="Кнопка профиля пользователя"
-                aria-pressed="false"
-                data-burger-btn
-              >
-                <svg class="icon" width="29" height="29">
-                  <use xlink:href="#icon-user"></use>
-                </svg>
-              </button>
-              <button
-                class="header__btn header__btn--cart btn btn--reset"
-                type="button"
-                aria-label="Кнопка перехожа в корзину"
-                aria-pressed="false"
-                data-burger-btn
-              >
-                <svg class="icon" width="32" height="29">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </button>
+              <ul class="header__btn-list">
+                <li class="header__btn-list-item">
+                  <button
+                  class="header__btn btn btn--reset"
+                  type="button"
+                  aria-label="Переключатель отображения меню"
+                  aria-pressed="false"
+                  data-burger-btn
+                >
+                  <svg class="icon" width="32" height="23">
+                    <use xlink:href="#icon-menu"></use>
+                  </svg>
+                </button>
+                </li>
+                <li class="header__btn-list-item">
+                  <button
+                  class="header__btn btn btn--reset"
+                  type="button"
+                  aria-label="Кнопка профиля пользователя"
+                  aria-pressed="false"
+                  data-burger-btn
+                >
+                  <svg class="icon" width="29" height="29">
+                    <use xlink:href="#icon-user"></use>
+                  </svg>
+                </button>
+                </li>
+                <li class="header__btn-list-item cart-btn-wrap">
+                  <button
+                  class="header__btn btn btn--reset"
+                  type="button"
+                  aria-label="Кнопка перехода в корзину"
+                  aria-pressed="false"
+                  data-burger-btn
+                >
+                  <svg class="icon" width="32" height="29">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </button>
+                <span class="cart-counter">5</span>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- ToDo Бургер-меню -->
